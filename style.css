@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#toDo{
+    width: 95%;
+    height: 700px;
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;*/
+    margin: 25px auto;
+    background-color: #ffccf9;
+    border-radius: 40px;
+    
+
+}
+
+#title  {
+    text-align: center;
+    padding: 20px;
+    margin: 30px; 
+}
+
+.textbox {
+    width: 150px;
+    margin: auto; 
+
+}
+
+h1 {
+    color:  #b28dff;
+    font-size: 4em;
+    padding: 25px 
+}
+
+h3 {
+    margin: 20px;
+}
