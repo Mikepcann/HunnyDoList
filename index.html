@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-        <title></title>
+        <title>Hunny Do List</title>
         <meta charset="UTF-8">
         <meta name="description" content="">       
         <meta name="keywords" content="">
@@ -17,14 +17,30 @@
     <body>
         <div id="toDo">
             <div id="title"><h1>Hunny Do list</h1>
-            <h3>Mike Cann's Hunny Do List</h3>
-            <p>Here I am going to build a to do list using javascript. Wish me luck and here we go.</p>
+                <h3>Mike Cann's Hunny Do List</h3>
+                <p>Here I am going to build a to do list using javascript. Wish me luck and here we go.</p>
+            <!--End of title Div-->    
             </div>
+
             <div class="textbox">
-            <input type="text" id="entry" placeholder="Enter list here">
+            <input type="text" placeholder="Enter list here">
+
+            <ul class="todos">
+                <li>Take out garbage</li>
+                <li>Clean fridge</li>
+                <li>Get milk</li>
+            </ul>
+            <div id="buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tipBtn">Tips</button>
+            </div>
+            <!--End of Textbox Div-->
             </div>
     
             <script type="text/javascript" src="hunnydo.js"></script>
+    <!---End of toDo div-->
         </div>
+       
     </body>
 </html>
