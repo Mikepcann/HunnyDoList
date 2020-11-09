@@ -2,7 +2,7 @@
 
 //selecting dom elements
 
-var input = document.querySelector("input[type = 'text']");
+/*var input = document.querySelector("input[type = 'text']");
 var ul = document.querySelector("ul");
 
 // adding event listener
@@ -41,4 +41,4 @@ ul.addEventListener("click", function(ev) {
         ev.target.classList.toggle('checked');
     }
 }, false
-);
+);*/
