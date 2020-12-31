@@ -37,3 +37,7 @@ ul {
     padding: 10px;
     margin: 10px;
 }
+
+#enterButt, #clearButt {
+    width: 50px;
+}

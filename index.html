@@ -16,30 +16,29 @@
 </head>
     <body>
         <div id="toDo">
-            <div id="title"><h1>Hunny Do list</h1>
-                <h3>Mike Cann's Hunny Do List</h3>
-                <p>Here I am going to build a to do list using javascript. Wish me luck and here we go.</p>
-            <!--End of title Div-->    
+            <div id="title">    
+                <h1>Hunny Do list</h1>
             </div>
+            <!--End of title Div-->    
+           
 
             <div class="textbox">
-            <input type="text" placeholder="Enter list here">
-
-            <ul class="todos">
-                <li>Take out garbage</li>
-                <li>Clean fridge</li>
-                <li>Get milk</li>
-            </ul>
-            <div id="buttons">
-                <button class="save">Save</button>
-                <button class="clear">Clear</button>
-                <button class="tipBtn">Tips</button>
+                <input type="text" placeholder="Enter list here" id="inputField">
+                <div id="listItems">
+                    <ul id="todos-list">
+                    </ul>
+                </div>
+                <div id="controls">
+                    <input type="button" id="enterButt" value="Enter">
+                    <input type="button" id="clearButt" value="Clear">
+               
+                </div>
+                <!--End of Button Div-->
+            
             </div>
             <!--End of Textbox Div-->
-            </div>
-    
             <script type="text/javascript" src="hunnydo.js"></script>
-    <!---End of toDo div-->
+        <!---End of toDo div-->
         </div>
        
     </body>
