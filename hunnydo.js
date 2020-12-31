@@ -46,5 +46,6 @@ textBox.addEventListener('keyup', function(event){
 // clears the entire list using "Clear" BUTTON
 clearItem.addEventListener('click', function(){
     list.innerHTML = '';
+    textBox.focus();
 });
 
