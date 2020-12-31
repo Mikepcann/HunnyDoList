@@ -1,44 +1,29 @@
-//This is the Script for the to do list
+// starting the code from scratch
 
-//selecting dom elements
+/*
+    Things that need to happen:
+        1. collect what the user enters into text field
 
-/*var input = document.querySelector("input[type = 'text']");
-var ul = document.querySelector("ul");
+        2. save that as varible
 
-// adding event listener
-input.addEventListener("keypress", function(keypressed) {
-    if(keypressed.which === 13) {
-        var li = document.createElement("li");
-        var spanElement = document.createElement("span");
-        var icon = document.createElement("i");
+        3. add it to html list
+            3b. name element with label that can be used to access it again
+        
+        4. add delete button to remove item from list and html
 
-        var newTodo = this.value;
-        this.value = " ";
+    
 
-        icon.classList.add('fas', 'fa-trash-alt');
-        spanElement.append(icon);
-        ul.appendChild(li).append(spanElement, newTodo);
+*/
 
-        deleteTodo();
+// access enter Button
+let addItem = document.getElementById('enterButt');
+// access the List
+let list = document.getElementById('todos-list');
+// access Textbox
+let textBox = document.getElementById('inputField');
 
-    }
-});
-
-// fuction to delete span if clicked
-
-function deleteTodo(){
-    for(let span of spans){
-        span.addEventListener("click", function (){
-            span.parentElement.remove();
-            event.stopPropagation();
-        });
-    }
-}
-// event listener to line through list if cloicked
-
-ul.addEventListener("click", function(ev) {
-    if (ev.target.tagName === "LI") {
-        ev.target.classList.toggle('checked');
-    }
-}, false
-);*/
+let notify = () => {
+    console.log('this worked!')
+};
+addItem.onclick = notify();
+   
