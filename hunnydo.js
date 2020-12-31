@@ -2,7 +2,7 @@
 
 /*
     Things that need to happen:
-        1. collect what the user enters into text field
+        1. collect what the user enters into text field CHECK
 
         2. save that as varible
 
@@ -15,15 +15,20 @@
 
 */
 
-// access enter Button
-let addItem = document.getElementById('enterButt');
-// access the List
-let list = document.getElementById('todos-list');
+
 // access Textbox
 let textBox = document.getElementById('inputField');
+// access the List
+let list = document.getElementById('todos-list');
+// access enter Button
+let addItem = document.getElementById('enterButt');
 
-let notify = () => {
-    console.log('this worked!')
-};
-addItem.onclick = notify();
-   
+//
+let blank = 'Enter List Here';
+
+addItem.addEventListener('click', function(){
+    let listItem = document.createElement('li');
+    listItem.innerHTML = textBox.value;
+    list.appendChild(listItem);
+    textBox.value = '';
+});
