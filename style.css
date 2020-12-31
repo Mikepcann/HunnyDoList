@@ -38,6 +38,6 @@ ul {
     margin: 10px;
 }
 
-#enterButt {
+#enterButt, #clearButt {
     width: 50px;
 }

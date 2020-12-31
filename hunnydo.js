@@ -22,13 +22,29 @@ let textBox = document.getElementById('inputField');
 let list = document.getElementById('todos-list');
 // access enter Button
 let addItem = document.getElementById('enterButt');
+// access clear Button
+let clearItem = document.getElementById('clearButt');
 
-//
-let blank = 'Enter List Here';
-
+//  adds items to the list using the "Enter" BUTTON
 addItem.addEventListener('click', function(){
     let listItem = document.createElement('li');
     listItem.innerHTML = textBox.value;
     list.appendChild(listItem);
     textBox.value = '';
+    textBox.focus();
+    
 });
+//  adds items to the list using the "Enter" KEY
+textBox.addEventListener('keyup', function(event){
+    if(event.keyCode === 13){
+        let listItem = document.createElement('li');
+        listItem.innerHTML = textBox.value;
+        list.appendChild(listItem);
+        textBox.value = '';  
+    }
+})
+// clears the entire list using "Clear" BUTTON
+clearItem.addEventListener('click', function(){
+    list.innerHTML = '';
+});
+
